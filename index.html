@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Welcome to the Grocery List App: This is Placeholder!</h1>
+    <div>
+      <h3>This'll do something, im sure of it!</h3>
+      <form onsubmit="createRow();return false">
+        <label for="item">New Item</label>
+        <input type="text" name="item" id="item" />
+        <label for="quant">Quantity</label>
+        <select name="quant" id="quant">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br /><br />
+        <button type="submit">Click me!</button>
+      </form>
+    </div>
+    <div id="rowHolder"></div>
+  </body>
+</html>
