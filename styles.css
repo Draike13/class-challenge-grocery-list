@@ -1,3 +1,8 @@
 body {
   background-color: gray;
 }
+#rowHolder {
+  width: 325px;
+  min-height: 500px;
+  background-color: antiquewhite;
+}
