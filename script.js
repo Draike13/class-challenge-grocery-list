@@ -11,17 +11,22 @@ let holder = document.getElementById('rowHolder');
 function createRow() {
   let row = new ListItem(item.value, quant.value);
   let newDiv = document.createElement('div');
-  //   let quantInput = document.createElement('select');
-  //   quantInput.value = row.quantity;
-  row.deleteButton.textContent = 'Delete Me';
-  row.deleteButton.addEventListener('click', () => {
-    newDiv.remove();
-    row.deleteButton.remove();
-  });
-  console.log(row.deleteButton);
-  newDiv.innerHTML = row.item;
-  newDiv.append(row.quantity);
-  newDiv.append(row.deleteButton);
+  let itemHolder = document.createElement('span');
+  let quantHolder = document.createElement('span');
+  let deleteButton = row.deleteButton;
+  newDiv.className = 'row';
+  itemHolder.className = 'itemHolder';
+  quantHolder.className = 'quantHolder';
+  deleteButton.className = 'deleteButton';
+  deleteButton.textContent = 'Delete Me';
+  itemHolder.textContent = row.item;
+  quantHolder.textContent = row.quantity;
+  newDiv.append(itemHolder);
+  newDiv.append(quantHolder);
+  newDiv.append(deleteButton);
   holder.appendChild(newDiv);
+  deleteButton.addEventListener('click', () => {
+    newDiv.remove();
+  });
   console.log(holder);
 }
