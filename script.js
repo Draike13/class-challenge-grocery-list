@@ -18,9 +18,9 @@ function createRow() {
   itemHolder.className = 'itemHolder';
   quantHolder.className = 'quantHolder';
   deleteButton.className = 'deleteButton';
-  deleteButton.textContent = 'Delete Me';
   itemHolder.textContent = row.item;
   quantHolder.textContent = row.quantity;
+  deleteButton.textContent = 'Delete Me';
   newDiv.append(itemHolder);
   newDiv.append(quantHolder);
   newDiv.append(deleteButton);

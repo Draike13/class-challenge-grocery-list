@@ -1,6 +1,12 @@
 body {
   background-color: gray;
 }
+
+.addButton {
+  border-radius: 2px;
+  background-color: green;
+  font-weight: bold;
+}
 #rowHolder {
   padding: 5px;
   width: 325px;
